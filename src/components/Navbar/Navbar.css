@@ -3,9 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-black);
+    /* background-image: url('/src/assets/footer-bg.jpg'); */
+    background: black;
 
     padding: 1rem 2rem;
+    /* border-bottom: 1px solid #aaa6a6; */
 }
 
 .app__navbar-logo {
@@ -35,13 +37,25 @@
     color: var(--color-grey);
 }
 
-.app__navbar-login {
+.app__navbar-table_icon img {
+    width: 80px;
+}
+
+.app__navbar-table_icon {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.app__navbar-login a{
+.twirling-icon {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .app__navbar-table_icon:hover .twirling-icon {
+    transform: rotate(360deg);
+  }
+
+/* .app__navbar-login a{
     margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s ease;
@@ -49,13 +63,13 @@
 
 .app__navbar-login a:hover {
     border-bottom: 1px solid var(--color-golden);
-}
+} */
 
-.app__navbar-login div {
+/* .app__navbar-login div {
     width: 1px;
     height: 30px;
     background-color: var(--color-grey);
-}
+} */
 
 .app__navbar-smallscreen {
     display: none;

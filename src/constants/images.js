@@ -28,6 +28,11 @@ import L from '../assets/L.png';
 import B from '../assets/B.png';
 import outside4 from '../assets/outside4.png';
 import nyama from '../assets/nyama.jpg';
+import festival from '../assets/festival.jpg';
+import lb1 from '../assets/lb1.jpg';
+import dj from '../assets/dj.jpg';
+import wine from '../assets/wine.jpg';
+import icon2 from '../assets/icon2.png'
 
 export default {
   bg,
@@ -60,4 +65,9 @@ export default {
   B,
   outside4,
   nyama,
+  festival,
+  dj,
+  wine,
+  icon2,
+  lb1,
 };

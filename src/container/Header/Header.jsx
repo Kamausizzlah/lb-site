@@ -1,26 +1,65 @@
-import { SubHeading } from '../../components'; 
 import { images } from '../../constants';
+import { meal } from '../../constants';
 
+import './Header.css'
 
+const Header = () => {
+  return (
+    <div className="cavalli-container">
 
-import './Header.css';
-
-const Header = () => (
-  <div className='app__header app__wrapper section__padding' id='home'>
-    <div className='app__wrapper_info'>
-      <SubHeading title="Welcome to the LB Lounge"/>
-      <h1 className='app__header-h1'>Key to Fine Dining</h1>
-      <p className='p__opensans' style={{ margin: '2rem 0'}}>Welcome to The LB Lounge! Bring your family and unwind in a cozy atmosphere as you enjoy sizzling nyama choma and a variety of delicious dishes from our menu. Great food, good vibes, and unforgettable moments await!</p>
-      <button type='button' className='custom__button'>Explore Menu</button>
-
+      {/* Background video */}
+      <video 
+        className="background-video" 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+      >
+        <source src={meal} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="cavalli-header">
+      
+        <div className="logo-container">
+          <a href="home" className="logo-link">
+            <img 
+              src={images.file} 
+              alt="lb-logo" 
+              className="logo" 
+            />
+          </a>
+        </div>
+        
+        {/* <button className="see-menu-button">
+          <a href='#menu'>
+            SEE MENU
+          </a>
+        </button> */}
+      </div>
+      
+      <div className="hero-content">
+        <h1 className="welcome-text">
+          Welcome to
+          <div className="brand-name">
+            <span className="manor-text">The</span> LB <span className="lb-text">Lounge</span>
+          </div>
+        </h1>
+        
+        <div className="tagline">
+          <span>DRINK</span>
+          <span className="dot">.</span>
+          <span>DANCE</span>
+          <span className="dot">.</span>
+          <span>DINE</span>
+        </div>
+        
+        <div className="opening-hours">
+          <span className="clock-icon">⏱</span>
+          <span>Opening Hours: 12:00 - 03:00</span>
+        </div>
+      </div>
     </div>
+  );
+};
 
-    <div className='app__wrapper_img'>
-      <img src={images.inside} alt='haeder img'/>
-
-
-    </div>
-  </div>
-);
-    
 export default Header;
