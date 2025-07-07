@@ -2,7 +2,7 @@ import './SpecialMenu.css';
 
 const SpecialMenu = () => {
   return (
-    <div className="menu-container">
+    <div className="menu-container" id='menu'>
       <div className="menu-header">
         <h1>Food Menu</h1>
       </div>
@@ -151,14 +151,14 @@ const SpecialMenu = () => {
             </div>
             <div className="menu-item">
               <div className="item-info">
-                <span className="item-name">BAHATI BUKUKU <span className="serves-label">SERVES 4</span></span>
+                <span className="item-name">BUKUKU LB <span className="serves-label">SERVES 4</span></span>
                 <span className="item-description">A mix of full Kienyeji fried chicken with corn, nduma, chips and boiled eggs</span>
               </div>
               <span className="item-price">2,800</span>
             </div>
             <div className="menu-item">
               <div className="item-info">
-                <span className="item-name">CAVALLI BITINGS PLATTER <span className="serves-label">SERVES 2</span></span>
+                <span className="item-name">LB BITINGS PLATTER <span className="serves-label">SERVES 2</span></span>
                 <span className="item-description">4 Beef sausages, 4 samosas, 6 chicken wings/lollipop, 4 chicken nuggets and carbonara fries.</span>
               </div>
               <span className="item-price">2,200</span>

@@ -4,7 +4,7 @@ import { images } from '../../constants';
 import './Founder.css';
 
 const Founder = () => (
-  <div className='app__founder app__bg app__wrapper section__padding'>
+  <div className='app__founder app__bg app__wrapper section__padding' id='founder'>
     <div className='app__wrapper_img app__wrapper_img-reverse'>
       <img src={images.gallery04} alt='chef_image' />
     </div>

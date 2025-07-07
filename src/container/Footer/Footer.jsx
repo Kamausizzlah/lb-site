@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <section className="bar-promo-section">
+    <section className="bar-promo-section" id='contact'>
       <div className="overlay"></div>
       <div className="content-container">
         <h3 className="p__cormorant">THE LB LOUNGE</h3>

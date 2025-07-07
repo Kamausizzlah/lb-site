@@ -5,7 +5,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className="cavalli-container">
+    <div className="lb-container" id='#home'>
 
       {/* Background video */}
       <video 
@@ -18,7 +18,7 @@ const Header = () => {
         <source src={meal} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="cavalli-header">
+      <div className="lb-header">
       
         <div className="logo-container">
           <a href="home" className="logo-link">
@@ -29,12 +29,6 @@ const Header = () => {
             />
           </a>
         </div>
-        
-        {/* <button className="see-menu-button">
-          <a href='#menu'>
-            SEE MENU
-          </a>
-        </button> */}
       </div>
       
       <div className="hero-content">

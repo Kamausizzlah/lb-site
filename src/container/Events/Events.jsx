@@ -28,7 +28,7 @@ const Events = () => {
     }, [eventPics.length]);
 
     return (
-        <section className="events-section app__bg section__padding">
+        <section className="events-section app__bg section__padding" id="events">
 
             {/* { Section heading } */}
             <h2 className="events-title headtext__cormorant">
